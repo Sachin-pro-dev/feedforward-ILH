@@ -11,7 +11,6 @@ const { formsRouter } = require('./routes/forms');
 
 // Load environment variables
 dotenv.config();
-
 // Check for necessary environment variables
 if (!process.env.PORT) {
     console.error('Environment variable PORT is missing');
