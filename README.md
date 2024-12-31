@@ -295,33 +295,129 @@ FeedForward actively collaborates with:
 
 ---
 
-## 🚀 How to Run the Project Locally
 
-1. Clone the repository:
+---
+
+### Step-by-Step Guide to Clone and Run FeedForward
+
+#### 1. **Clone the Repository**
+   Open your terminal and run the following command to clone the repository:
 
    ```bash
    git clone https://github.com/your-repo/feedforward.git
+   ```
+
+   Navigate into the project directory:
+
+   ```bash
    cd feedforward
    ```
 
-2. Install dependencies:
+#### 2. **Install Frontend Dependencies**
+   Install the required dependencies for the frontend part of the project:
 
    ```bash
    npm install
    ```
 
-3. Start the development server:
+   This will install all the necessary dependencies listed in the `package.json` file.
+
+#### 3. **Start the Frontend Development Server**
+   Once the dependencies are installed, you can start the frontend development server:
 
    ```bash
    npm run dev
    ```
 
-4. Access the app at:
+   The frontend will be accessible at:
+
    ```bash
    http://localhost:3000
    ```
 
+   You should be able to view and interact with the frontend of the app in your browser.
+
 ---
+
+#### 4. **Setup the Backend Server**
+   Now, go to the backend directory, which is located in the root directory of the project (assuming there's a folder named `server`).
+
+   ```bash
+   cd server
+   ```
+
+#### 5. **Install Backend Dependencies**
+   Install the required dependencies for the backend:
+
+   ```bash
+   npm install
+   ```
+
+   This installs all the necessary backend dependencies, like Express.js, PostgreSQL, etc.
+
+#### 6. **Start the Backend Server**
+   After installing the dependencies, you can start the backend server:
+
+   ```bash
+   npm start
+   ```
+
+   This will start the backend server, typically accessible at `http://localhost:5000` or whatever your backend configuration is.
+
+---
+
+#### 7. **Keep the Servers Running During Development**
+   You will need to keep both the frontend and backend servers running for the application to function properly. To ensure that your servers run continuously, you can use the following methods:
+
+   - **For Frontend Server**: If you are using `npm run dev`, the frontend server will keep running in the terminal window where you executed the command. Just make sure that terminal window is open and running.
+   
+   - **For Backend Server**: You can use tools like `nodemon` to automatically restart the backend server whenever you make code changes.
+
+   **Install `nodemon` globally (if not installed):**
+
+   ```bash
+   npm install -g nodemon
+   ```
+
+   Then, instead of using `npm start`, use:
+
+   ```bash
+   nodemon server.js
+   ```
+
+   This will ensure that the backend server restarts automatically whenever you modify files in the server directory.
+
+---
+
+#### 8. **Restarting the Servers (if needed)**
+   If you need to manually restart either server during development:
+
+   - **Frontend Server**: Simply stop the frontend server (`Ctrl + C`) and restart with:
+
+     ```bash
+     npm run dev
+     ```
+
+   - **Backend Server**: If using `nodemon`, it will automatically restart when file changes are detected. If not, manually stop it (`Ctrl + C`) and run:
+
+     ```bash
+     npm start
+     ```
+
+---
+
+### Additional Tips:
+- **Database Setup**: Ensure that your PostgreSQL database is set up and properly configured. You may need to run migrations or seed data, depending on your setup.
+  
+- **Environment Variables**: Check if there are any `.env` files in the root or server directories, and make sure they are correctly configured for both frontend and backend services.
+
+- **Error Handling**: Always check the terminal for any errors after running the servers, and make sure the necessary services (like the database) are running.
+
+---
+
+Once both the frontend and backend are running, you can freely interact with FeedForward locally, test features, and make any necessary changes for development.
+
+
 
 ## 💡 Future Enhancements
 
