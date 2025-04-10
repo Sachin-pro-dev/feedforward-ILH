@@ -142,38 +142,6 @@ FeedForward connects food donors, such as vendors, farmers, and organizations, w
 
 ---
 
-## Tech Stack
-
-### **Frontend:**
-
-- Next.js
-- React.js
-- Tailwind CSS
-
-### **Backend:**
-
-- Node.js
-- Express.js
-- PostgreSQL with NeonDB
-
-### **Blockchain:**
-
-- Sepolia Testnet
-- Web3.js
-- Remix IDE
-
-### **Authentication:**
-
-- ZOD
-- MetaMask Wallet
-- JWT & Google OAuth 2.0
-
-### **Hosting:**
-
-- Vercel/Netlify
-
----
-
 ## Impact of the Project
 
 FeedForward addresses hunger, reduces food waste, and fosters sustainability by combining technology, social responsibility, and environmental consciousness. It ensures efficient food redistribution, incentivizes participation, and empowers communities for a better future.
